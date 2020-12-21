@@ -1,0 +1,65 @@
+header{
+    background: url("../images/head.jpg");
+    background-size: cover;
+    background-position: center; /* not background-position-x*/
+    min-height: 800px;
+}
+@media screen and (max-width: 670px);{  
+}
+nav{
+    background-color: #2797B9;
+}
+.nav-wrapper {
+        float: right;
+        display: block;
+        text-decoration: none;
+        font-size: 17px;
+        
+}
+#searchbox{
+    border: solid cornsilk;
+    background-origin: padding-box;
+    background-color: white;
+    border-radius: 5px;
+    width: 700px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+}
+input:focus{
+    outline: none !important;
+    text-area
+}
+.search {
+    position: relative;
+}
+.search .fa-search {
+    position: absolute;
+    top: 24px;
+    left: 7px;
+    font-size: 15px;
+}
+  
+body{
+    background-color:;
+    text-decoration-color: cornsilk;
+}
+.page-footer{
+    background-color: black;
+}
+h3{
+    color: #2797B9;
+}
+#serviceTitle{
+    text-align: center;
+}
+searchicon{
+    position: absolute;
+}
