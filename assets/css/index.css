@@ -81,3 +81,103 @@ form{
     border: 5px solid black ;
 }
 /* SIGN UP STYLE ENDS HERE */
+
+
+/* vendors profile styling starts here */
+
+:root {
+    --blue: #2797b9;
+    --cyan: #09ece5;
+    --black: #080705;
+    --white: #ffffff;
+  }
+  
+  body { background-color: var(--white) !important ; }
+  
+  .my-blue{
+    color: var(--blue)
+  }
+  
+  .my-bg-blue{
+    background-color: var(--blue);
+  }
+  
+  .header-font{
+    font-size: 25px;
+  }
+  
+  section{
+    margin-bottom: 100px !important;
+  }
+  
+  a.my-link{
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+  
+  
+  .profile-image{
+    cursor: pointer;
+    max-width: 300px ;
+    border-radius: 20px;
+    margin: 0 auto;
+  } 
+  
+  .profile-wrapper{
+    padding: 5px;
+    /* height: 50vh */
+  }
+  .profile-image-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+  }
+  
+  
+  .profile-text{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  
+  .available{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: lawngreen;
+    
+  }
+  
+  .unavailable{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: red;
+  }
+  
+  /* This styles the review section */
+  
+  .review-item{
+    
+    border-bottom: 1px solid lightgray;
+    padding: 10px 5px ;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .reviews{
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 15px;
+  
+  }
+
+  /* vendors profile styling ends here */
