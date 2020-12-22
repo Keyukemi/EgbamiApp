@@ -20,7 +20,7 @@
     <script src="https://use.fontawesome.com/61b09a571b.js"></script>
 </head>
 <body>
-<header>
+<header class="header-img">
         <div>
             <nav class="transparent">
                 <div class="container">
