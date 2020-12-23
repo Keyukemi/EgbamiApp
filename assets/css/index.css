@@ -2,9 +2,25 @@
     background: url("../images/head.jpg");
     background-size: cover;
     background-position: center; /* not background-position-x*/
-    min-height: 800px;
+    min-height: 200px;
 }
-@media screen and (max-width: 670px);{  
+@media screen and (max-width: 670px){ 
+    header{
+        min-height: 200px;
+    } 
+}
+.brand-logo img{
+   
+}
+.brand-logo{
+    position: absolute;
+    top: -40%;
+    
+    
+}
+.section{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
 }
 nav{
     background-color: #2797B9;
@@ -16,8 +32,9 @@ nav{
         font-size: 17px;
         
 }
+
 #searchbox{
-    border: solid cornsilk;
+    border: solid black;
     background-origin: padding-box;
     background-color: white;
     border-radius: 5px;
@@ -38,7 +55,7 @@ input:focus{
     text-area
 }
 .search {
-    position: relative;
+    position: relative ;
 }
 .search .fa-search {
     position: absolute;
@@ -48,7 +65,6 @@ input:focus{
 }
   
 body{
-    background-color:;
     text-decoration-color: cornsilk;
 }
 .page-footer{
