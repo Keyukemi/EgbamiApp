@@ -20,9 +20,9 @@
                 <input type="text" name="password2" placeholder="Retype Password" required/><br>
                 <input type="text" name="services" placeholder="What Service will you offer?" required/><br><br>
                 
-                <!-- <label for="service">Choose Service to offer: </label>
+                <!-- <label for="services">Choose Service to offer: </label>
 
-                    <select name="service" id="services">
+                    <select name="services" id="services">
                         <option value="barber">Barber</option>
                         <option value="hairStylist">Hair Stylist</option>
                         <option value="tailor">Tailor</option>
