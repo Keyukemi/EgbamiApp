@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/materialize/css/font/material-icons.css">
-    <title>Vendor Reg Form</title>
-</head>
+<?php include('include/header.php');?> 
+
 <body>
 <div class="container">
-            <div class="center-align green-text"><h3>Register Here</h3</div><br>    
-        </div>
-
+    <div class="center-align">
+        <h3>Register Here</h3>
+    </div><br>
         <form action="#" method="post"><br>
             <div class="personal">
                 <input type="text" name="name" placeholder="Full Name" required/><br>
-                <input type="text" name="email" placeholder="Company name" required/><br>
-                <input type="number" name="number" placeholder="Phone Number" required/><br>
+                <input type="text" name="companyName" placeholder="Company name" required/><br>
+                <input type="text" name="phoneNumber" placeholder="Phone Number" required/><br>
+                <input type="text" name="Address" placeholder="Street Address" required/><br>
                 <input type="text" name="email" placeholder="Email" required/><br>
-                <input type="text" name="email" placeholder="Company Email" required/><br>
-                <input type="text" name="email" placeholder="Street Address" required/><br>
-                <input type="text" name="email" placeholder="company address" required/><br>
-                <input type="text" name="email" placeholder="City" required/><br>
-                <input type="text" name="email" placeholder="State" required/><br>
-                <input type="text" name="name" placeholder="Enter Password" required/><br>
-                <input type="text" name="number" placeholder="Retype Password" required/><br>
-                <H4> <div class="center-align  hoverable"><input type="submit" value="CONTINUE"/></div> </H4>
+                <input type="text" name="city" placeholder="City" required/><br> 
+                <input type="text" name="state" placeholder="State" required/><br>
+                <input type="text" name="password1" placeholder="Enter Password" required/><br>
+                <input type="text" name="password2" placeholder="Retype Password" required/><br>
+                <input type="text" name="services" placeholder="What Service will you offer?" required/><br><br>
+                
+                <!-- <label for="service">Choose Service to offer: </label>
 
-        </div>
-    </form>
-</body>
-</html>
+                    <select name="service" id="services">
+                        <option value="barber">Barber</option>
+                        <option value="hairStylist">Hair Stylist</option>
+                        <option value="tailor">Tailor</option>
+                        <option value="laundry">Laundry Services</option>
+                        <option value="mechanic">Mechanic</option>
+                        <option value="painter">Painter</option>
+                        <option value="plumber">Plumber</option>
+                        <option value="gymInstructor">Gym Instructor</option>
+                        <option value="chef">Personal Chef</option>
+                        <option value="shopper">Personal Shopper</option>
+                        <option value="masseuse">Masseuse</option>
+                        
+                    </select><br><br> -->
+
+                <div class="center-align">
+                    <button class="center-align hoverable black waves-effect waves-light btn z-depth-0 white-text">Submit</button>
+                </div>
+            </div>
+        </form>
+</div>
+
+<?php include('include/footer.php');?> 
