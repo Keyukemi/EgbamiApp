@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<?php include('include/header.php');?> 
+<?php include('include/specialheader.php');?> 
     
 <section>
 <div class="container">
-        <h3 class="center-align">Place Your Order</h3><br>
+        
         <form action="#" method="post"><br>
+            <h3 class="center-align">Place Your Order</h3><br>
             <input type="text" name="name" placeholder="Full name" required/><br>
             <input type="text" name="number" placeholder="Phone Number" required/><br>
             <input type="text" name="email" placeholder="Email" required/><br>
@@ -40,4 +41,4 @@
     </div>
 </section>
 
-<?php include('include/footer.php');?> 
+<?php include('include/specialfooter.php');?> 
