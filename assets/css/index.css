@@ -1,20 +1,18 @@
-header{
-  background-image: url(assets/css/images/hands.jpeg);
+.parallax{
+  /* background: url("../images/head.jpg"); */
   background-size: cover;
-  background-position: center;
+  background-position: center; /* not background-position-x*/
   min-height: 200px;
 }
-.section{
-  padding-top: 4vw;
-  padding-bottom: 4vw;
-}
 
-@media screen and (max-width: 670px){
-  header{
-      min-height: 200px;
-  }
+@media screen and (max-width: 1300px){ 
+  .parallax-container{
+      max-height: 400px;
+  } 
 }
-
+.egbami-intro{
+background-color: #080705;
+}
 
 .brand-logo{
   position: absolute;
@@ -27,24 +25,27 @@ header{
   padding-bottom: 4vw;
 }
 nav{
-  background-color: #2797B9;
+
+  /* background-color:#eceff1; */
+  background-color: #cfd8dc;
+ 
 }
 .nav-wrapper {
       float: right;
       display: block;
       text-decoration: none;
-      font-size: 17px;
-      
+      font-size: 17px;       
 }
+
 
 #searchbox{
   border: solid black;
   background-origin: padding-box;
   background-color: white;
-  border-radius: 5px;
-  width: 700px;
+  border-radius: 10px;
+  /* width: 700px; */
 }
-
+input[type=text]{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -53,9 +54,10 @@ nav{
   border-radius: 4px;
   box-sizing: border-box;
 }
-
+}
 input:focus{
   outline: none !important;
+  /* text-area */
 }
 .search {
   position: relative ;
@@ -68,36 +70,45 @@ input:focus{
 }
 
 body{
-  text-decoration-color: cornsilk;
+  text-decoration-color: cornsilk;  
 }
 .page-footer{
-  background-color: black;
+background-color: #080705;
 }
+
 h3{
   color: #2797B9;
+  font-family: 'Times New Roman', Times, serif;
+}
+h5{
+font-family: 'Times New Roman', Times, serif;
+}
+p{
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #serviceTitle{
   text-align: center;
 }
-searchicon{
-  position: absolute;
+ul{
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* SIGN UP STYLE STARTS HERE */
 .app-wrap{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: linear-gradient( to bottom, rgba(0,0,0,0.1),rgba(0,0,0,1));
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* min-height: 100vh; */
+  /* background-image: linear-gradient( to bottom, rgba(0,0,0,0.1),rgba(0,0,0,1)); */
 }
 form{
-  max-width: 470px!important ;
+  max-width: 470px !important ;
   margin:20px auto !important;
   padding: 20px !important; 
   border-radius: 30px 30px 30px 30px;
   border-color: 10px solid black !important ; 
   opacity: 0.9;
   border: 5px solid black ;
+  background-color: white;
 }
 /* SIGN UP STYLE ENDS HERE */
 
@@ -196,7 +207,6 @@ li{
   border: 1px solid lightgray;
   padding: 10px;
   border-radius: 15px;
-
 }
 
 /* vendors profile styling ends here */

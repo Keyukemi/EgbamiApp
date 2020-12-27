@@ -104,7 +104,7 @@ include('include/config.php');
 <html lang="en">
 
 <?php 
-include('include/header.php');
+include('include/specialheader.php');
 
 
 ?> 
@@ -164,11 +164,11 @@ include('include/header.php');
                 </div>
             </div>
             <div class="center">
-            <input class="btn grey waves-effect waves-light z-depth-0" type="submit" name="submit" value="Submit">
+            <input class="btn cyan lighten-2 waves-effect waves-light z-depth-0" type="submit" name="submit" value="Submit">
             </div>
         </form>
 
     </section>  
 
-            <?php include('include/footer.php');?>
+            <?php include('include/specialfooter.php');?>
 
