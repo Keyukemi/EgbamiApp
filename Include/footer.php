@@ -26,7 +26,7 @@
             </div>
     </div>
     
-        <div class="footer-copyright blue-grey darken-3 ">
+        <div class="footer-copyright black  ">
             <div class="container blue-text">
                 <div class="container center-align">&copy; 2020 Egbami</div></br>
                 <div class="container center-align">Made with

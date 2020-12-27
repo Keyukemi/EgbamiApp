@@ -19,7 +19,7 @@
 <header>
 
 <div class="navbar-fixed">
-        <nav class="nav-wrapper">
+        <nav class="nav-wrapper transparent">
             <div class="container">
                 <a href="index.php" class="brand-logo">
                     <img src="assets/images/EgbamiLogo.png" alt="" width="100" height="110"></a>
@@ -29,10 +29,10 @@
 
                 <ul class="right hide-on-med-and-down">
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li class=""><a href="#">Blog</a></li>
                     <li><a href="#">Testimonials</a></li>
-                    <li><a href="login.php" class="grey darken-2 waves-effect waves-light btn z-depth-1 small"> Login</a></li> 
-                    <li><a href="signup.php" class="grey darken-3 waves-effect waves-light btn z-depth-1"> Sign Up</a></li>
+                    <li><a href="login.php" class="black waves-effect waves-light btn z-depth-1 small"> Login</a></li> 
+                    <li><a href="signup.php" class="black waves-effect waves-light btn z-depth-1"> Sign Up</a></li>
                     <li><a href="#" class="btn-floating black darken-2 z-depth-0">
                         <i class="material-icons">notifications</i>
                     </a></li>
