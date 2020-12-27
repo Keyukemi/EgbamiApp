@@ -102,6 +102,7 @@ include('include/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <?php 
 include('include/header.php');
 
@@ -117,6 +118,7 @@ include('include/header.php');
             <input name="email"  type="text" value="<?php echo htmlspecialchars($email) ?>">
             <div class="red-text"><?php echo $errors['email']; ?></div><br>
             
+
             <div class="row">
                 <div class="input-field col s12 m6 l6">
                 <label for=""> First Name </label>  
@@ -165,6 +167,8 @@ include('include/header.php');
             <input class="btn grey waves-effect waves-light z-depth-0" type="submit" name="submit" value="Submit">
             </div>
         </form>
+
     </section>  
 
             <?php include('include/footer.php');?>
+

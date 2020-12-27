@@ -2,16 +2,7 @@
 <html>
 
 <?php include('include/header.php');?> 
-<section>
-<div class="container center-align"><h3>Egbami is here to help you connect with the best artisans anywhere and anytime</h3></div>
-        </br> </br></br></br> 
-            <div class="container" id="searchbox" >
-                <input  class= "input-field" type="search" placeholder="Who are you looking for?" id="search-text-input">
-                <span><a><i class="fa fa-search"></i></a></span>
-            </div>
-</div>
 
-</section>
 
 <section class="container" id="aboutus">
       <div class="row">
@@ -30,6 +21,17 @@
           </div>
       </div>
   </section>
+
+<section>
+    <div class="container center-align"><h3>Egbami is here to help you connect with the best artisans anywhere and anytime</h3></div>
+        </br> </br></br></br> 
+        <div class="container" id="searchbox" >
+            <input  class= "input-field" type="search" placeholder="Who are you looking for?" id="search-text-input">
+            <span><a><i class="fa fa-search"></i></a></span>
+        </div>
+    </div>
+
+</section>
 
 <section>
 <div class="container" id="services section">
