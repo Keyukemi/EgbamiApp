@@ -19,7 +19,7 @@
 <header>
 
 <div class="navbar-fixed">
-        <nav class="nav-wrapper transparent">
+        <nav class="nav-wrapper">
             <div class="container">
                 <a href="index.php" class="brand-logo">
                     <img src="assets/images/EgbamiLogo.png" alt="" width="100" height="110"></a>

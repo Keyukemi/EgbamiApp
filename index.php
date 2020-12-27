@@ -3,14 +3,17 @@
 
 <?php include('include/header.php');?> 
 
+<div class="parallax-container">
+      <div class="parallax"><img src="assets\images\head.jpg"></div>
+</div>
 
 <section class="container" id="aboutus">
       <div class="row">
-          <div class="col s12 l6">
+          <div class="col s12 l6 center">
               <img src="assets/images/EgbamiLogo.png" alt="" class="responsive-img">
           </div>
           <div class="col s12 l6 ">
-              <h3 class="black-text lighten-2">Who we are</h3>
+              <h3 class="black-text lighten-2 center">Who we are</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam doloribus asperiores eligendi nesciunt! Est, laboriosam! Maiores, reprehenderit exercitationem aperiam veniam quos eum qui, quod mollitia beatae totam ullam nam?
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione fugit temporibus harum ea quas quo commodi a quis, quisquam officiis quidem illo! Sed itaque, incidunt quo dolore ut excepturi deleniti!
               </p>
@@ -22,20 +25,26 @@
       </div>
   </section>
 
-<section>
+<section class="black">
+        </br> </br></br>
     <div class="container center-align"><h3>Egbami is here to help you connect with the best artisans anywhere and anytime</h3></div>
-        </br> </br></br></br> 
-        <div class="container" id="searchbox" >
-            <input  class= "input-field" type="search" placeholder="Who are you looking for?" id="search-text-input">
-            <span><a><i class="fa fa-search"></i></a></span>
+    </br>
+    <div class="row container">
+        <div class="input-field col s12">
+            <div id="searchbox" >
+                <i class=" material-icons prefix"> search</i>
+                <input  type="search" placeholder="Who are you looking for?" id="search-text-input"  class="validate">
+            </div>
         </div>
     </div>
-
+        
+    <!-- </div> -->
+    </br> </br></br>
 </section>
 
 <section>
 <div class="container" id="services section">
-    <div class="container" id="serviceTitle"><h2><a href="#">Services</a></h2></div>
+    <div class="container" id="serviceTitle"><h3><a href="#">Services</a></h3></div>
     <div class="row">
         <div class="col s12 m4 l4">
             <div class="card">
