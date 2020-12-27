@@ -1,9 +1,12 @@
 <?php 
-$email = $firstName = $lastName = $phoneNum = $password = $passwordConfirm = ' ';
-$errors = array('email'=>'', 'firstName'=>'', 'lastName'=> '', 'phoneNum'=>'', 'password'=> '', 'passwordConfirm'=> '');
-if (isset($_POST['submit'])){
+include('include/config.php');
 
+    $email = $firstName = $lastName = $phoneNum = $password = $passwordConfirm = ' ';
+    $errors = array('email'=>'', 'firstName'=>'', 'lastName'=> '', 'phoneNum'=>'', 'password'=> '', 'passwordConfirm'=> '');
+
+    if (isset($_POST['submit'])){
     //check email
+
     if (empty($_POST['email'])){ 
         $errors['email'] =  'an email is required <br />';
     } else{
@@ -68,18 +71,28 @@ if (isset($_POST['submit'])){
     if(array_filter($errors)){
         //echo 'there are errors in the form';
     }else{
-        header('location: regsuccessful.php');
-    }
-        // $email = mysqli_real_escape_string($conn, $_POST['email']);
-        // $firstName = mysqli_real_escape_string($conn, $_POST['firstName']);
-        // $lastName = mysqli_real_escape_string($conn, $_POST['lastName']);
-        // $phoneNum  = mysqli_real_escape_string($conn, $_POST['phoneNum']);
-        // $password = mysqli_real_escape_string($conn, $_POST['passsowrd']);
-        // $passwordConfirm = mysqli_real_escape_string($conn, $_POST['passwordConfirm']);
-        
-    
-    
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $firstName = mysqli_real_escape_string($conn, $_POST['firstName']);
+        $lastName = mysqli_real_escape_string($conn, $_POST['lastName']);
+        $phoneNum  = mysqli_real_escape_string($conn, $_POST['phoneNum']);
+        $password = mysqli_real_escape_string($conn, $_POST['password']);
+        $passwordConfirm = mysqli_real_escape_string($conn, $_POST['passwordConfirm']);
+         
+        //create sql
 
+         $sql = "INSERT INTO userdetails (email, firstName, lastName, phoneNum, password, passwordConfirm) VALUES 
+         ('$email', '$firstName', '$lastName', '$phoneNum','$password', '$passwordConfirm')";
+
+         //save to database and check
+         if (mysqli_query($conn, $sql)){
+             //success
+             header('Location: regsuccessful.php');
+         } else{
+             echo 'query error: '. mysqli_error($conn);
+         }  
+        
+        }
+        
 } //end of post check
 
    
@@ -89,47 +102,51 @@ if (isset($_POST['submit'])){
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include('include/header.php');?> 
+<?php 
+include('include/header.php');
+
+
+?> 
         <section class="container grey-text">
-        <br>
-        <br>
-        <form action="signup.php" class="white center" id="signupForm" method="POST">
         <h3 class="center">Hello!</h3>
-        <h6 class="center">Kindly fill in the form below.</h6><br>
+        <h6 class="center">Kindly fill in the form below.</h6>
 
-           
-            <input name="email" placeholder="Email" type="email" value="<?php echo htmlspecialchars($email) ?>">
-            <div class="red-text"><?php echo $errors['email']; ?></div>
+        <form action="signup.php" class="white" id="signupForm" method="POST">
+        
             <label for="" >Email</label>
-
-    
+            <input name="email"  type="text" value="<?php echo htmlspecialchars($email) ?>">
+            <div class="red-text"><?php echo $errors['email']; ?></div><br>
+            
             <div class="row">
                 <div class="input-field col s12 m6 l6">
-               
-                    <input name="firstName" placeholder="First Name" type="text"  value="<?php echo htmlspecialchars($firstName) ?>">
+                <label for=""> First Name </label>  
+                    <input name="firstName" class="validate" type="text"  value="<?php echo htmlspecialchars($firstName) ?>">
                     <div class="red-text"><?php echo $errors['firstName']; ?></div>
-                    <label for="">First Name</label>
+                    
                 </div>
                 <div class="input-field col s12 m6 l6">
-                
-                    <input name="lastName" placeholder="Last Name" type="text"  value="<?php echo htmlspecialchars($lastName) ?>">
+                <label for=""> Last Name </label>  
+                    <input name="lastName" class="validate" type="text"  value="<?php echo htmlspecialchars($lastName) ?>">
                     <div class="red-text"><?php echo $errors['lastName']; ?></div>  
-                    <label for=""> Last Name </label>    
+                      
                 </div>
             </div>
 
             <label for="">Phone Number </label>
-            <input name="phoneNum" placeholder="Phone Number" type="text" value="<?php echo htmlspecialchars($phoneNum) ?>">
-            <div class="red-text"><?php echo $errors['phoneNum']; ?></div>
+            <input name="phoneNum" class="validate" type="text" value="<?php echo htmlspecialchars($phoneNum) ?>">
+            <div class="red-text"><?php echo $errors['phoneNum']; ?></div><br>
 
-            <label for=""></label>
+            
             <div class="row">
                 <div class="input-field col s12 m6 l6">
-                    <input name="password" placeholder="Password" type="text"  value="<?php echo htmlspecialchars($password) ?>">
+                <label for="">Password</label>
+                    <input name="password" type="text" class="validate" value="<?php echo htmlspecialchars($password) ?>">
                     <div class="red-text"><?php echo $errors['password']; ?></div>
+                    
                 </div>
                 <div class="input-field col s12 m6 l6">
-                    <input name="passwordConfirm" placeholder="Retype Password" type="text"  value="<?php echo htmlspecialchars($passwordConfirm) ?>">
+                <label for="">Retype Password</label>
+                    <input name="passwordConfirm" class="validate" type="text"  value="<?php echo htmlspecialchars($passwordConfirm) ?>">
                     <div class="red-text"><?php echo $errors['passwordConfirm']; ?></div>
                 </div>
             </div>
@@ -148,31 +165,6 @@ if (isset($_POST['submit'])){
             <input class="btn grey waves-effect waves-light z-depth-0" type="submit" name="submit" value="Submit">
             </div>
         </form>
-    </section>
-
-    <!-- <div class="row">
-                <div class="input-field col s12">
-                    <input id="email" placeholder="Email" type="email" class="validate">
-                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="phone_num" placeholder="Phone Number" type="text" class="validate">
-                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password" placeholder="Password" type="password" class="validate">
-                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password_revalidation" placeholder="Retype Password" type="password" class="validate">
-                    
-                </div>
-            </div> -->   
+    </section>  
 
             <?php include('include/footer.php');?>
