@@ -1,8 +1,8 @@
 <footer class="page-footer">
 
-<div class="container" id="socials">
+    <div class="container" id="socials">
             <div class="row">
-                <div class="col s12 l6">
+                <div class="col s6 l6">
                     <h5>Connect with us</h5>
                     <ul>
                         <li><a href="#" class="tooltipped btn-floating btn-small black" data-tooltip="Facebook">
@@ -16,7 +16,7 @@
                         </a></li>
                     </ul>
                 </div>
-                <div class="col s12 l4 offset-l2">
+                <div class="col s6 l4 offset-l2">
                     <h5>Office Address</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Illum, quasi facilis. Libero id quisquam nobis, quae earum nesciunt odit necessitatibus eos nulla qui unde optio natus rem nisi. Minus, quae?</p>
@@ -24,12 +24,14 @@
                 </div>
 
             </div>
-        </div>
+    </div>
     
-        <div class="footer-copyright blue-text">
-            <div class="container">
+        <div class="footer-copyright blue-grey darken-3 ">
+            <div class="container blue-text">
                 <div class="container center-align">&copy; 2020 Egbami</div></br>
-                <div class="container center-align">Made with <i class="material-icons" id="love icon">favorite</i> by Project10-LAW</div>
+                <div class="container center-align">Made with
+                     <!-- <i class="material-icons" id="love icon">favorite</i>  -->
+                     by Project10-LAW</div>
                 <div class="container center-align">Pearls Africa Foundation</div>  
             </div>
         </div>
@@ -42,11 +44,12 @@
     <script>
     $(document).ready(function(){
         $('.sidenav').sidenav();
+        $('.parallax').parallax();
         $('.materialboxed').materialbox();
         $('.tooltipped').tooltip();
         // $('.button-collapse').sideNav({
         // closeOnClick: true});
-    })
+    });
     </script>
 </body>
 </html>

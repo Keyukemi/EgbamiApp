@@ -9,9 +9,9 @@
         <img  class="profile-image image-fluid" src="assets/images/pancake 2.0.jpeg" >
       </div>
       <div class="col-md-12 col-lg-8 ">
-        <h1 class="text-center mb-5"> Vendor Name</h1>
-        <p class="profile-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorum inventore quos. In ex laudantium est deserunt a distinctio. Mollitia optio, perspiciatis ipsam est modi ex itaque ipsa aliquam quos aut consequuntur at dolores commodi molestiae unde ducimus doloribus voluptatibus? Consequatur, esse sequi expedita dolorem maxime iste maiores fugit voluptates dolor nesciunt corrupti magnam doloremque dicta voluptas optio natus similique et? Odit cupiditate expedita tempore totam nemo reprehenderit error alias vel molestias reiciendis quam sapiente est ipsum nulla soluta, possimus quos maxime minus corrupti tempora modi corporis, eum natus. Necessitatibus, repudiandae ea ullam consectetur ipsum delectus alias quae libero rerum.</p>
+        <h3 class="center"> Vendor Name</h3>
+        <p class="profile-text"> About Vendor</p>
+        <p>A vendor is a person who offers services to receive payment in return</p>
       </div>
     </div>
     <hr style="color: blue; margin-top: 60px;"/>
@@ -44,7 +44,8 @@
 
 
               <section class=" container reviews">
-                <h1 class=" ">Reviews</h1>
+                <h3 class=" center">Reviews</h3>
+                <hr>
                 <div class="review-item">
                   <h3 class="my-blue header-font">Name</h3>
                   <p>

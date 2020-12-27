@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<?php include('include/header.php');?> 
+<?php include('include/specialheader.php');?> 
         <section class="app-wrap">
         <br>
         <br>
@@ -59,4 +59,4 @@
         </form>
     </section>
          
-    <?php include('include/footer.php');?>
+    <?php include('include/specialfooter.php');?>
