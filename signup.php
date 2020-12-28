@@ -109,8 +109,8 @@ include('include/specialheader.php');
 
 ?> 
         <section class="container grey-text">
-        <h3 class="center">Hello!</h3>
-        <h6 class="center">Kindly fill in the form below.</h6>
+        <h3 class="center white-text">Hello!</h3>
+        <h6 class="center white-text">Kindly fill in the form below.</h6>
 
         <form action="signup.php" class="white" id="signupForm" method="POST">
         

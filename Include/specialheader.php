@@ -15,7 +15,7 @@
 
   <title>Egbami Vendor registration</title>
 </head>
-<body class="grey lighten-1" >
+<body class="blue darken-4" >
     <header>
         <div class="container">
             <ul class="center">
