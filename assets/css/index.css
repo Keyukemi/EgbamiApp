@@ -71,7 +71,14 @@ input:focus{
 
 body{
   text-decoration-color: cornsilk;  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+main {
+  flex: 1 0 auto;
+}
+  
 .page-footer{
 background-color: #080705;
 }
@@ -101,7 +108,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   /* background-image: linear-gradient( to bottom, rgba(0,0,0,0.1),rgba(0,0,0,1)); */
 }
 form{
-  max-width: 470px !important ;
+  max-width: 400px !important ;
   margin:20px auto !important;
   padding: 20px !important; 
   border-radius: 30px 30px 30px 30px;

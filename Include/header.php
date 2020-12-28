@@ -46,7 +46,6 @@
                     <li><a class="waves-effect" href="login.php">Login</a></li>
                     <li><a class="waves-effect" href="signup.php">Sign Up</a></li>
                 </ul>
-            </div>     
+            </div>      
         </nav> 
     </header>
-

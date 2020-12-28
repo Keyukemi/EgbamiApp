@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
 
 <?php include('include/specialheader.php');?> 
       
     <section >
         <!-- class="app-wrap" -->
-    <br>
-    <br>
         <form action="" class="white container" id="loginForm">
         <h3 class="center-align">Log In</h3><br>
             <div class="row">
